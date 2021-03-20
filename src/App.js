@@ -20,7 +20,7 @@ function App() {
     const { speed } = data.wind;
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
-      "http://openweathermap.org/img/wn/" + icon + ".png";
+      "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".description").innerText = description;
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
@@ -48,7 +48,7 @@ function App() {
         <input onKeyDown={keyHandler} type="text" className="search-bar" placeholder="Search" />
         <button onClick={search}>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             width="1.5em"
             height="1.5em"
             viewBox="0 0 24 24"
